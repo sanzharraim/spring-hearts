@@ -2,19 +2,22 @@ body{
 margin:0;
 font-family:Arial;
 background:linear-gradient(180deg,#f3a8bd,#e4a3c8);
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 overflow:hidden;
+padding:20px;
+box-sizing:border-box;
 }
 
-/* карточка скрыта */
+/* карточка скрыта сначала */
 .card{
 display:none;
 background:white;
-width:420px;
-padding:40px;
+width:100%;
+max-width:420px;
+padding:25px;
 border-radius:20px;
 text-align:center;
 box-shadow:0 10px 30px rgba(0,0,0,0.2);
@@ -28,11 +31,23 @@ letter-spacing:2px;
 
 h1{
 color:#e94c89;
+font-size:26px;
+margin:10px 0;
 }
 
 .text{
 color:#555;
 line-height:1.6;
+font-size:15px;
+}
+
+.notice{
+margin-top:20px;
+border:2px dashed #ff6b81;
+padding:15px;
+border-radius:12px;
+color:#ff4d73;
+font-size:14px;
 }
 
 .heart{
@@ -45,12 +60,12 @@ animation:fall linear forwards;
 @keyframes fall{
 
 0%{
-transform:translateY(-10vh);
+transform:translateY(-10vh) rotate(0deg);
 opacity:1;
 }
 
 100%{
-transform:translateY(110vh);
+transform:translateY(110vh) rotate(360deg);
 opacity:0;
 }
 

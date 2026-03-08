@@ -28,13 +28,14 @@ function startHearts(){
 function createHeart(){
 
 const heart = document.createElement("div")
+
 heart.classList.add("heart")
 
-heart.innerHTML="❤️"
+heart.innerHTML = "❤️"
 
-heart.style.left=Math.random()*100+"vw"
-heart.style.animationDuration=(4+Math.random()*4)+"s"
-heart.style.fontSize=(12+Math.random()*18)+"px"
+heart.style.left = Math.random()*100 + "vw"
+heart.style.animationDuration = (4 + Math.random()*4) + "s"
+heart.style.fontSize = (12 + Math.random()*18) + "px"
 
 document.body.appendChild(heart)
 
